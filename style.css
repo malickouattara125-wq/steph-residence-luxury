@@ -289,13 +289,16 @@ section{padding-block:clamp(56px,9vw,104px)}
 .loc-list li{display:flex;gap:14px;font-size:14.5px;color:var(--ink-soft);line-height:1.5}
 .loc-list li b{color:var(--ink);font-weight:600}
 .loc-list .dot{width:6px;height:6px;border-radius:50%;background:var(--gold);margin-top:7px;flex:none}
-.loc-card{
-  background:var(--surface-2);border:1px solid var(--line);border-radius:2px;
-  padding:32px;display:flex;flex-direction:column;gap:6px;
+.loc-directions{margin-top:24px}
+.loc-map{
+  aspect-ratio:4/3;border-radius:2px;overflow:hidden;
+  border:1px solid var(--line);box-shadow:var(--shadow);
+  background:var(--surface-2);
 }
-.loc-card .big{font-family:"Fraunces",serif;font-size:26px}
-.loc-note{color:var(--ink-soft);font-size:14px;margin-top:10px}
-@media (max-width:860px){.location{grid-template-columns:1fr}}
+.loc-map iframe{filter:grayscale(0.15) contrast(1.02)}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .loc-map iframe{filter:invert(0.9) hue-rotate(180deg) contrast(0.9)}}
+:root[data-theme="dark"] .loc-map iframe{filter:invert(0.9) hue-rotate(180deg) contrast(0.9)}
+@media (max-width:860px){.location{grid-template-columns:1fr}.loc-map{aspect-ratio:16/10}}
 
 /* ---------- Contact ---------- */
 .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
@@ -351,7 +354,6 @@ footer{border-top:1px solid var(--line);padding-block:36px;padding-bottom:calc(3
   .hero-actions .btn{flex:1 1 auto;text-align:center}
   .hero-meta{gap:18px 24px}
   .amenity{padding:20px 16px}
-  .loc-card{padding:24px 20px}
   .band{padding:24px 20px}
   .band-actions .btn{flex:1 1 auto;text-align:center}
   .footer-row{flex-direction:column;align-items:center;text-align:center;gap:8px}
