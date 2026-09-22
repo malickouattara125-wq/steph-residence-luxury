@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Steph Residence Luxury — Résidence meublée à Cocody, Abidjan</title>
+<meta name="description" content="Résidence meublée haut de gamme à Cocody, Abidjan. Réservez votre séjour d'exception dès maintenant.">
+<link rel="icon" type="image/png" href="images/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="topbar">
+  <div class="topbar-row">
+    <a class="brand" href="#residence" aria-label="Steph Residence Luxury — accueil">
+      <img src="images/logo.png" alt="Steph Residence Luxury" class="brand-logo">
+    </a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#residence">La résidence</a>
+      <a href="#galerie">Galerie</a>
+      <a href="#video">Vidéo</a>
+      <a href="#equipements">Équipements</a>
+      <a href="#tarifs">Tarifs</a>
+      <a href="#contact">Contact</a>
+      <a class="btn btn-primary nav-cta" href="#contact">Réserver</a>
+    </nav>
+    <div class="topbar-actions">
+      <a class="btn btn-primary desktop-cta" href="#contact">Réserver</a>
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navLinks" aria-label="Ouvrir le menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</div>
+
+<header class="hero">
+  <img src="images/salon-lustre.jpg" alt="Salon de Steph Residence Luxury, meuble bas TV rétroéclairé, salon gris et dorures">
+  <div class="hero-content wrap">
+    <div class="hero-eyebrow">Résidence meublée · Cocody, Abidjan</div>
+    <h1>Et si votre séjour rimait avec confort et élégance ?</h1>
+    <p class="lede">Bienvenue à Steph Residence Luxury : un intérieur soigné, des équipements modernes et tout le confort d'un chez-vous, loin de chez vous — dans un cadre calme et sécurisé.</p>
+    <div class="hero-actions">
+      <a class="btn btn-primary" href="https://wa.me/33624959089?text=Bonjour%2C%20je%20souhaite%20r%C3%A9server%20un%20s%C3%A9jour%20%C3%A0%20Steph%20Residence%20Luxury." target="_blank" rel="noopener">Réserver sur WhatsApp</a>
+      <a class="btn btn-ghost hero-ghost" href="#galerie">Voir la résidence</a>
+    </div>
+    <div class="hero-meta">
+      <div><span class="label">Quartier</span><span class="value">Cocody, Abidjan</span></div>
+      <div><span class="label">À partir de</span><span class="value">35 000 FCFA / nuit</span></div>
+      <div><span class="label">Idéal pour</span><span class="value">Court ou long séjour</span></div>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section id="residence" class="wrap">
+    <div class="intro">
+      <div class="intro-copy">
+        <p>Un intérieur pensé pour votre bien-être, au cœur d'un cadre calme et sécurisé.</p>
+        <p>Steph Residence Luxury vous ouvre les portes d'un appartement meublé haut de gamme à Cocody : moulures et dorures dans le salon, chambre habillée de velours et bois clair, cuisine équipée et salle de bain moderne. Chaque détail a été choisi pour que vous vous sentiez chez vous, en mieux.</p>
+        <p>Séjour court ou prolongé, en famille, entre amis ou pour le travail : vivez l'expérience du luxe accessible, à quelques minutes des lieux incontournables d'Abidjan.</p>
+        <a class="btn btn-ghost" href="#tarifs">Voir les tarifs →</a>
+      </div>
+      <figure class="intro-figure">
+        <img src="images/chambre-lit.jpg" alt="Chambre avec tête de lit capitonnée et tableau Tour Eiffel">
+        <figcaption class="cap">La chambre — velours, dorures &amp; literie soignée</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section id="galerie" class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">Galerie</div>
+      <h2>Chaque pièce, à son avantage</h2>
+      <p>Un aperçu fidèle des espaces — du salon d'accueil à la chambre, en passant par la cuisine équipée.</p>
+    </div>
+
+    <div class="gallery-tabs" role="tablist" aria-label="Filtrer la galerie">
+      <button class="tab" role="tab" aria-selected="true" data-filter="all">Tout voir</button>
+      <button class="tab" role="tab" aria-selected="false" data-filter="salon">Salon</button>
+      <button class="tab" role="tab" aria-selected="false" data-filter="chambre">Chambre</button>
+      <button class="tab" role="tab" aria-selected="false" data-filter="cuisine">Cuisine</button>
+      <button class="tab" role="tab" aria-selected="false" data-filter="sdb">Salle de bain</button>
+      <button class="tab" role="tab" aria-selected="false" data-filter="entree">Entrée</button>
+    </div>
+
+    <div class="gallery-grid" id="galleryGrid">
+      <figure class="big" data-cat="salon"><img src="images/salon-lustre.jpg" alt="Salon principal avec meuble TV rétroéclairé et fauteuils gris"><figcaption>Salon</figcaption></figure>
+      <figure data-cat="chambre"><img src="images/chambre-tv-2.jpg" alt="Chambre, meuble TV bois avec étagères éclairées"><figcaption>Chambre</figcaption></figure>
+      <figure data-cat="chambre"><img src="images/chambre-lit.jpg" alt="Tête de lit velours et tableau Tour Eiffel"><figcaption>Chambre</figcaption></figure>
+      <figure data-cat="sdb"><img src="images/salle-de-bain.jpg" alt="Douche à l'italienne carrelée"><figcaption>Salle de bain</figcaption></figure>
+      <figure data-cat="chambre"><img src="images/chambre-armoire.jpg" alt="Armoire trois portes et climatiseur"><figcaption>Rangements</figcaption></figure>
+      <figure class="big" data-cat="salon"><img src="images/salon-tv.jpg" alt="Vue du salon avec lustre doré et miroirs"><figcaption>Salon</figcaption></figure>
+      <figure data-cat="salon"><img src="images/salon-canape.jpg" alt="Canapé courbe gris avec tableau mural et table d'appoint dorée"><figcaption>Salon</figcaption></figure>
+      <figure data-cat="salon"><img src="images/coin-repas.jpg" alt="Table à manger ronde et chaises velours"><figcaption>Coin repas</figcaption></figure>
+      <figure data-cat="cuisine"><img src="images/cuisine.jpg" alt="Cuisine équipée, meubles bois et électroménager"><figcaption>Cuisine</figcaption></figure>
+      <figure data-cat="cuisine"><img src="images/cuisine-evier.jpg" alt="Évier et plan de travail de la cuisine"><figcaption>Cuisine</figcaption></figure>
+      <figure class="big" data-cat="entree"><img src="images/entree.jpg" alt="Entrée avec table d'appoint, chaises et plante"><figcaption>Entrée</figcaption></figure>
+    </div>
+  </section>
+
+  <section id="video" class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">Visite vidéo</div>
+      <h2>Explorez la résidence en vidéo</h2>
+      <p>Trois séquences pour vous projeter avant votre arrivée.</p>
+    </div>
+    <div class="video-grid">
+      <div class="video-frame">
+        <video controls preload="metadata" poster="images/salon-lustre.jpg">
+          <source src="videos/visite-residence.mp4" type="video/mp4">
+          Votre navigateur ne prend pas en charge la lecture vidéo.
+        </video>
+        <p class="video-caption">Visite générale</p>
+      </div>
+      <div class="video-frame">
+        <video controls preload="metadata" poster="images/chambre-lit.jpg">
+          <source src="videos/visite-residence-2.mp4" type="video/mp4">
+          Votre navigateur ne prend pas en charge la lecture vidéo.
+        </video>
+        <p class="video-caption">Chambre</p>
+      </div>
+      <div class="video-frame">
+        <video controls preload="metadata" poster="images/salon-tv.jpg">
+          <source src="videos/visite-residence-3.mp4" type="video/mp4">
+          Votre navigateur ne prend pas en charge la lecture vidéo.
+        </video>
+        <p class="video-caption">Salon</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="equipements" class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">Équipements</div>
+      <h2>Tout est pensé pour votre confort</h2>
+      <p>Une résidence entièrement meublée et équipée, prête à vivre dès votre arrivée.</p>
+    </div>
+    <div class="amenities">
+      <div class="amenity">
+        <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 8h16M4 14h16M4 20h10" stroke-linecap="round"/><rect x="4" y="4" width="16" height="4" rx="1"/></svg>
+        <h3>Climatisation</h3>
+        <p>Climatiseur dans la chambre pour des nuits fraîches quelle que soit la saison.</p>
+      </div>
+      <div class="amenity">
+        <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="12" rx="1"/><path d="M8 21h8M12 17v4" stroke-linecap="round"/></svg>
+        <h3>Télévision</h3>
+        <p>Écran plat dans la chambre et le salon, sur meuble sur-mesure rétroéclairé.</p>
+      </div>
+      <div class="amenity">
+        <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 10h16v9a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-9Z"/><path d="M8 10V6a4 4 0 0 1 8 0v4" stroke-linecap="round"/></svg>
+        <h3>Cuisine équipée</h3>
+        <p>Réfrigérateur, plaques de cuisson, ustensiles et vaisselle mis à disposition.</p>
+      </div>
+      <div class="amenity">
+        <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M7 4v6M11 4v3a2 2 0 0 0 4 0V4M12 13v7" stroke-linecap="round"/></svg>
+        <h3>Douche à l'italienne</h3>
+        <p>Salle de bain moderne, eau chaude assurée par chauffe-eau dédié.</p>
+      </div>
+      <div class="amenity">
+        <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2 3 7v6c0 5 4 8 9 9 5-1 9-4 9-9V7l-9-5Z"/></svg>
+        <h3>Résidence sécurisée</h3>
+        <p>Quartier calme de Cocody, accès à portes fermées à clé.</p>
+      </div>
+      <div class="amenity">
+        <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="4" y="3" width="16" height="18" rx="1"/><path d="M8 7h8M8 11h8M8 15h5" stroke-linecap="round"/></svg>
+        <h3>Rangements</h3>
+        <p>Armoire trois portes et espaces de rangement dans la chambre.</p>
+      </div>
+      <div class="amenity">
+        <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 20V10l8-6 8 6v10" stroke-linejoin="round"/><path d="M9 20v-6h6v6" stroke-linejoin="round"/></svg>
+        <h3>Linge de maison</h3>
+        <p>Draps, couette et serviettes fournis et soignés pour votre arrivée.</p>
+      </div>
+      <div class="amenity">
+        <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 21s-7-4.6-7-10a5 5 0 0 1 9-3 5 5 0 0 1 9 3c0 5.4-7 10-7 10Z"/></svg>
+        <h3>Accueil soigné</h3>
+        <p>Décoration raffinée, éclairage d'ambiance et touches déco à chaque pièce.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="tarifs" class="wrap">
+    <div class="band">
+      <div>
+        <div class="eyebrow">Tarifs</div>
+        <h2>Le luxe, à prix juste</h2>
+        <p>Le tarif varie selon la durée du séjour et la période. Contactez-nous pour une disponibilité en temps réel et un devis personnalisé.</p>
+        <div class="band-actions">
+          <a class="btn btn-primary" href="#contact">Demander une disponibilité</a>
+          <a class="btn btn-ghost band-ghost" href="https://wa.me/33624959089?text=Bonjour%2C%20quel%20est%20le%20tarif%20pour%20mon%20s%C3%A9jour%20%C3%A0%20Steph%20Residence%20Luxury%20%3F" target="_blank" rel="noopener">Demander sur WhatsApp</a>
+        </div>
+      </div>
+      <div class="price">35 000 <small>FCFA / nuit — à partir de</small></div>
+    </div>
+  </section>
+
+  <section id="localisation" class="wrap">
+    <div class="location">
+      <div>
+        <div class="eyebrow">Localisation</div>
+        <h2>Au cœur de Cocody, Abidjan</h2>
+        <ul class="loc-list">
+          <li><span class="dot"></span><span><b>Quartier résidentiel</b> — calme, verdoyant et prisé, à proximité des grands axes d'Abidjan.</span></li>
+          <li><span class="dot"></span><span><b>Accès facile</b> — proche des restaurants, commerces et zones d'affaires de Cocody.</span></li>
+          <li><span class="dot"></span><span><b>Adresse précise</b> — communiquée après confirmation de votre réservation.</span></li>
+        </ul>
+      </div>
+      <div class="loc-card">
+        <span class="eyebrow gold">Adresse</span>
+        <span class="big">Cocody, Abidjan</span>
+        <span class="big">Côte d'Ivoire</span>
+        <p class="loc-note">L'itinéraire détaillé vous est envoyé par WhatsApp après confirmation, pour garantir la tranquillité de la résidence.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">Contact &amp; réservation</div>
+      <h2>Réservez votre séjour d'exception</h2>
+      <p>Écrivez-nous par le canal de votre choix, ou envoyez directement votre demande ci-dessous.</p>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-channels">
+        <a class="channel" href="https://wa.me/33624959089?text=Bonjour%2C%20je%20souhaite%20des%20informations%20sur%20Steph%20Residence%20Luxury." target="_blank" rel="noopener">
+          <svg class="ic" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5.1-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1-.2.2-.7.8-.8.9-.1.2-.3.2-.5.1-.2-.1-1-.4-2-1.2-.7-.6-1.2-1.4-1.4-1.6-.1-.2 0-.4.1-.5l.4-.4c.1-.1.2-.3.2-.4.1-.2 0-.3 0-.4l-.7-1.7c-.2-.4-.4-.4-.6-.4h-.5c-.2 0-.4.1-.6.3-.2.2-.8.8-.8 1.9 0 1.1.8 2.2.9 2.4.1.2 1.6 2.5 4 3.5.6.2 1 .4 1.3.5.6.2 1.1.2 1.5.1.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2 0-.1-.2-.2-.4-.3Z"/></svg>
+          <span><span class="t">WhatsApp</span><br><span class="v">+33 6 24 95 90 89</span></span>
+        </a>
+        <a class="channel" href="tel:+33624959089">
+          <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4 2h3a2 2 0 0 1 2 1.7c.1.9.3 1.8.6 2.7a2 2 0 0 1-.5 2.1L7.9 9.7a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.5 2.7.6a2 2 0 0 1 1.1 3.3Z"/></svg>
+          <span><span class="t">Téléphone</span><br><span class="v">+33 6 24 95 90 89</span></span>
+        </a>
+        <a class="channel" href="mailto:contact@stephresidenceluxury.com">
+          <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m4 7 8 6 8-6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span><span class="t">Email</span><br><span class="v">contact@stephresidenceluxury.com</span></span>
+        </a>
+        <p class="hint">Adresse email indicative — remplacez-la par votre vraie adresse dans index.html si besoin.</p>
+      </div>
+
+      <form class="book" id="bookForm">
+        <div class="field-row">
+          <div class="field">
+            <label for="f-name">Nom complet</label>
+            <input id="f-name" name="name" type="text" placeholder="Votre nom" required>
+          </div>
+          <div class="field">
+            <label for="f-phone">Téléphone</label>
+            <input id="f-phone" name="phone" type="tel" placeholder="+225 ..." required>
+          </div>
+        </div>
+        <div class="field-row">
+          <div class="field">
+            <label for="f-checkin">Arrivée</label>
+            <input id="f-checkin" name="checkin" type="date">
+          </div>
+          <div class="field">
+            <label for="f-checkout">Départ</label>
+            <input id="f-checkout" name="checkout" type="date">
+          </div>
+        </div>
+        <div class="field">
+          <label for="f-msg">Message</label>
+          <textarea id="f-msg" name="msg" rows="3" placeholder="Nombre de personnes, demandes particulières…"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Envoyer la demande sur WhatsApp</button>
+        <p class="hint">En validant, WhatsApp s'ouvre avec votre demande déjà rédigée — il ne vous reste qu'à l'envoyer.</p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap footer-row">
+    <img src="images/logo.png" alt="Steph Residence Luxury" class="footer-logo">
+    <span>Cocody, Abidjan, Côte d'Ivoire</span>
+    <span>© <span id="year"></span> Steph Residence Luxury. Tous droits réservés.</span>
+  </div>
+</footer>
+
+<a class="float-wa" href="https://wa.me/33624959089?text=Bonjour%2C%20je%20souhaite%20r%C3%A9server%20un%20s%C3%A9jour%20%C3%A0%20Steph%20Residence%20Luxury." target="_blank" rel="noopener" aria-label="Contacter sur WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5.1-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1-.2.2-.7.8-.8.9-.1.2-.3.2-.5.1-.2-.1-1-.4-2-1.2-.7-.6-1.2-1.4-1.4-1.6-.1-.2 0-.4.1-.5l.4-.4c.1-.1.2-.3.2-.4.1-.2 0-.3 0-.4l-.7-1.7c-.2-.4-.4-.4-.6-.4h-.5c-.2 0-.4.1-.6.3-.2.2-.8.8-.8 1.9 0 1.1.8 2.2.9 2.4.1.2 1.6 2.5 4 3.5.6.2 1 .4 1.3.5.6.2 1.1.2 1.5.1.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2 0-.1-.2-.2-.4-.3Z"/></svg>
+</a>
+
+<script src="script.js"></script>
+</body>
+</html>
